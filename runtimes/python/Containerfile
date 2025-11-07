@@ -1,0 +1,5 @@
+FROM python:3.11-alpine
+WORKDIR /sandbox
+RUN addgroup -g 1001 runner && adduser -S runner -u 1001 -G runner
+USER runner
+CMD ["python", "/sandbox/code.py"]
