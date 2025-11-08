@@ -1,9 +1,39 @@
+# Node modules (backend + frontend)
 node_modules/
+*/node_modules/
+
+# Environment files
 .env
-*.log
+*.env
+
+# Build and dist outputs
 build/
 dist/
+
+# Temporary execution directories
+api/src/services/tmp/
+tmp/
+*.tmp
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-generated files
 .DS_Store
 Thumbs.db
-/tmp/
-*.tmp
+
+# IDE/editor-specific
+.vscode/
+.idea/
+
+# Local Podman or container cache
+*.tar
+*.pid
+*.sock
+
+# Misc
+coverage/
+.cache/
